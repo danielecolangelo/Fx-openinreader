@@ -1,0 +1,30 @@
+{
+
+	"description": "Add Capability to open any link directly inside the reader",
+	"manifest_version": 2,
+	"name": "open in Reader",
+	"version": "0.1",
+	"icons": {
+		"16": "icons/openinreader-16.png",
+		"32": "icons/openinreader-32.png",
+		"48": "icons/openinreader-48.png",
+		"92": "icons/openinreader-92.png"
+	},
+
+	"applications": {
+		"gecko": {
+			"id": "openinreader@scienzedellevanghe.net",
+			"strict_min_version": "45.0.0"
+		}
+	},
+
+	"permissions": [
+		"contextMenus", 
+		"tabs"
+	],
+	
+	"background": {
+		"scripts": ["background.js"]
+	}
+
+}
